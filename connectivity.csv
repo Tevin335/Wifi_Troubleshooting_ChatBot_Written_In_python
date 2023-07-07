@@ -1,0 +1,71 @@
+user_query, intent, solution
+"I can't connect to the internet.", connectivity_issue, 
+- Check if other devices on the network are able to connect.
+- Restart your modem/router and try again.
+- Verify that your Wi-Fi password is correct.
+- Disable any VPN or proxy settings on your device.
+- Contact your internet service provider if the issue persists.
+
+"My Wi-Fi signal is weak.", wifi_issue, 
+- Move closer to your Wi-Fi router to improve signal strength.
+- Remove any physical obstructions blocking the Wi-Fi signal.
+- Consider using a Wi-Fi range extender or access point for better coverage.
+- Update your Wi-Fi router firmware to the latest version.
+- Check for interference from other electronic devices.
+
+"I'm getting a 'No internet access' error.", connection_error, 
+- Ensure your device is connected to the correct Wi-Fi network.
+- Restart your modem/router and wait for it to fully boot up.
+- Check if there are any known network outages in your area.
+- Update the network adapter drivers on your device.
+- Temporarily disable any firewall or antivirus software and test the connection.
+
+"I can't access a specific website.", website_access_issue, 
+- Clear your browser cache and cookies.
+- Try accessing the website using a different browser.
+- Check if the website is down by using an online service.
+- Disable any browser extensions that might be causing conflicts.
+- Restart your device and try accessing the website again.
+
+"I'm having trouble connecting to my work VPN.", vpn_issue, 
+- Double-check your VPN credentials and authentication settings.
+- Ensure you have a stable internet connection before connecting.
+- Verify that your firewall settings allow VPN connections.
+- Try connecting to the VPN from a different network or location.
+- Contact your IT department for further assistance.
+["I can't access the website.", "- Try clearing your browser cache and cookies."],
+    ["My Wi-Fi signal is weak.", "- Move closer to your Wi-Fi router to improve signal strength."],
+    
+    # Examples with specific named entities
+    ["I'm having trouble connecting to my work VPN.", "- Double-check your VPN credentials and authentication settings."],
+    ["The internet is slow.", "- Restart your modem/router and try again."],
+
+    # Examples with multiple named entities
+    ["I can't connect to the Wi-Fi network.", "- Verify that your Wi-Fi password is correct and restart your modem/router."],
+    ["I'm getting a 'No internet access' error.", "- Ensure your device is connected to the correct Wi-Fi network and restart your modem/router."],
+
+    # Examples with general troubleshooting instructions
+    ["I'm experiencing network connectivity issues.", "- Check if other devices on the network are able to connect and contact your internet service provider if the issue persists."],
+    ["The website is not loading.", "- Try accessing the website using a different browser and check if the website is down by using an online service."],
+
+    # Examples related to firewall or security settings
+    ["My antivirus software is blocking the connection.", "- Temporarily disable your antivirus software and test the connection."],
+    ["I can't access certain websites.", "- Check if the websites are blocked by your firewall and try disabling any browser extensions that might be causing conflicts."],
+
+    # Examples involving device settings or configurations
+    ["My device is not connecting to any Wi-Fi network.", "- Update the network adapter drivers on your device."],
+    ["I'm unable to establish a stable VPN connection.", "- Verify that your firewall settings allow VPN connections and try connecting from a different network or location."]
+intent_labels = [
+    "Website Access",
+    "Wi-Fi Signal",
+    "Work VPN Connection",
+    "Slow Internet",
+    "Wi-Fi Network Connection",
+    "No Internet Access",
+    "Network Connectivity",
+    "Website Loading",
+    "Antivirus Blocking",
+    "Blocked Websites",
+    "Device Wi-Fi Connection",
+    "Stable VPN Connection"
+]
